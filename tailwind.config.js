@@ -10,6 +10,7 @@ export default {
         sans: ["Montserrat"],
       },
       fontSize: {
+        none: "0px",
         base: "10px",
       },
       colors: {
@@ -17,7 +18,7 @@ export default {
           DEFAULT: "#ECCF4D",
         },
         gray: {
-          DEFAULT: "#EFECEC",
+          DEFAULT: "#808080",
         }
       }
     },

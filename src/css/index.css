@@ -3,3 +3,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    @apply text-base;
+}
+
+.container {
+    @apply w-full lg:max-w-[1330px] px-6 mx-auto;
+}
+
+/* .hero-content {
+    background-image: url(../../assets/img/sphere.png);
+    background-repeat: no-repeat;
+    background-size: 220px 220px;
+    background-position: right -60px;
+} */
