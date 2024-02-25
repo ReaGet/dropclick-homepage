@@ -6,8 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="bg-black">
+    <header>
+      <div class="container">
+        <a href="/" class="text-white">
+          DROP<span class="text-yellow">CLICK</span>
+        </a>
+  
+        <nav>
+          <button class="sm:hidden">
+            <svg width="37" height="37">
+              <use xlink:href="/assets/icons/burger.svg"/>
+            </svg>
+          </button>
+  
+          <div>
+            <a class="text-sm text-gray [&.js-active]:text-white js-active" href="#">Главная</a>
+            <a class="text-sm text-gray [&.js-active]:text-white" href="#">О сервисе</a>
+            <a class="text-sm text-gray [&.js-active]:text-white" href="#">Результаты</a>
+            <a class="text-sm text-gray [&.js-active]:text-white" href="#">Как это работает?</a>
+            <a class="text-sm text-gray [&.js-active]:text-white" href="#">Контакты</a>
+          </div>
+        </nav>
+  
+        <div class="text-white">
+          <a href="/login">Войти</a>
+          <a href="#">Перейти в аггрегатор</a>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="container"></div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          <a class="text-lg text-white [&.js-active]:text-bold" href="#">Главная</a>
+          <a class="text-lg text-white [&.js-active]:text-bold" href="#">О сервисе</a>
+          <a class="text-lg text-white [&.js-active]:text-bold" href="#">Результаты</a>
+          <a class="text-lg text-white [&.js-active]:text-bold" href="#">Как это работает?</a>
+          <a class="text-lg text-white [&.js-active]:text-bold" href="#">Контакты</a>
+        </div>
+
+        <div>
+          <span>Наши соц.сети:</span>
+          
+          <div>
+            <a href="#">
+              <svg width="46" height="46">
+                <use xlink:href="/assets/icons/tw.svg" />
+              </svg> 
+            </a>
+            <a href="#">
+              <svg width="46" height="46">
+                <use xlink:href="/assets/icons/ig.svg" />
+              </svg> 
+            </a>
+            <a href="#">
+              <svg width="46" height="46">
+                <use xlink:href="/assets/icons/fb.svg" />
+              </svg> 
+            </a>
+            <a href="#">
+              <svg width="46" height="46">
+                <use xlink:href="/assets/icons/yt.svg" />
+              </svg> 
+            </a>
+          </div>
+
+          <span>Ⓒ 2024 Все права защищены.<br/>DROPCLICK</span>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
