@@ -13,9 +13,13 @@ export default {
         none: "0px",
         base: "10px",
       },
+      lineHeight: {
+        normal: "1.25",
+      },
       colors: {
-        yellow: {
+        primary: {
           DEFAULT: "#ECCF4D",
+          hover: "#ffdd42",
         },
         gray: {
           DEFAULT: "#808080",
