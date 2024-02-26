@@ -163,13 +163,22 @@
             </h2>
 
             <div class="absolute md:relative bottom-0 flex gap-6">
-              <button class="button-outline flex items-center justify-center w-24 h-24 md:w-20 md:h-20 rotate-180 rounded-full text-white" disabled>
+              <button
+                class="button-outline flex items-center justify-center w-24 h-24 md:w-20 md:h-20 rotate-180 rounded-full text-white"
+                data-action="changeSlide"
+                data-value="prev"
+                disabled
+              >
                 <svg width="20" height="20" class="fill-current">
                   <use xlink:href="/assets/icons/sprites.svg#arrow-long"></use>
                 </svg>
               </button>
 
-              <button class="button-outline flex items-center justify-center w-24 h-24 md:w-20 md:h-20 rounded-full text-white">
+              <button
+                class="button-outline flex items-center justify-center w-24 h-24 md:w-20 md:h-20 rounded-full text-white"
+                data-action="changeSlide"
+                data-value="next"
+              >
                 <svg width="20" height="20" class="fill-current">
                   <use xlink:href="/assets/icons/sprites.svg#arrow-long"></use>
                 </svg>
@@ -177,7 +186,7 @@
             </div>
           </div>
 
-          <div class="flex items-start gap-12">
+          <div class="guides-wrapper flex items-start gap-12">
             <article class="flex flex-col gap-14 p-12 pt-24 rounded-3xl backdrop-blur-sm text-white z-10 border-gradient">
               <div class="flex items-center gap-12">
                 <div class="w-52 h-52 border border-[#383840] overflow-hidden rounded-3xl">
