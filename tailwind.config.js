@@ -24,7 +24,14 @@ export default {
         gray: {
           DEFAULT: "#808080",
         }
-      }
+      },
+      screens: {
+        xs: "540px",
+        sm: "750px",
+        md: "990px",
+        lg: "1230px",
+        xl: "1500px",
+      },
     },
   },
   plugins: [],
