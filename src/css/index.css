@@ -12,9 +12,17 @@ html {
     @apply w-full lg:max-w-[1330px] px-6 mx-auto;
 }
 
-/* .hero-content {
-    background-image: url(../../assets/img/sphere.png);
-    background-repeat: no-repeat;
-    background-size: 220px 220px;
-    background-position: right -60px;
-} */
+.border-gradient {
+    position: relative;
+}
+
+.border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5)) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}

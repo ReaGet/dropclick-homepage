@@ -116,7 +116,7 @@
           <div class="flex flex-col items-start gap-16 w-1/2">
             <div class="flex items-center gap-8 mt-10">
               <div class="w-44 h-[1px] bg-yellow"></div>
-              <span class="text-2xl text-white">DROPCLICK</h2>
+              <span class="text-2xl text-white">DROPCLICK</span>
             </div>
 
             <h2 class="max-w-[500px] mt-16 text-7xl text-white font-semibold">
@@ -135,63 +135,245 @@
         </section>
 
         <!-- TAGLINE -->
-        <section class="pt-64">
-          <div class="flex flex-col items-center gap-16 py-20 bg-[#121212] border-2 border-[#2D2D2D] rounded-[60px]">
-            <p class="max-w-[750px] text-3xl text-white text-center leading-[1.5]">
-              Помимо того, что <span class="text-yellow">ты экономишь кучу времени</span>, теперь ты знаешь, какие расходы требует каждая активность.Благодаря этому, рыботы становится в разы меньше.
-            </p>
-            <a href="#" class="px-36 py-8 rounded-full text-2xl text-black font-semibold uppercase bg-gradient-to-r from-[#E1C133] to-[#FFE366] border border-[#FFEA8C]">Перейти</a>
-          </div>
-        </section>
+        <div class="flex flex-col items-center gap-16 py-20 mt-64 bg-[#121212] border-2 border-[#2D2D2D] rounded-[60px]">
+          <p class="max-w-[750px] text-3xl text-white text-center leading-[1.5]">
+            Помимо того, что <span class="text-yellow">ты экономишь кучу времени</span>, теперь ты знаешь, какие расходы требует каждая активность.Благодаря этому, рыботы становится в разы меньше.
+          </p>
+          <a href="#" class="px-36 py-8 rounded-full text-2xl text-black font-semibold uppercase bg-gradient-to-r from-[#E1C133] to-[#FFE366] border border-[#FFEA8C]">Перейти</a>
+        </div>
         
         <!-- RESULTS -->
-        <section></section>
+        <section class="relative flex gap-16 pt-64">
+          <div class="flex flex-col gap-16 z-10">
+            <div class="flex items-center gap-8 mt-10">
+              <div class="w-44 h-[1px] bg-yellow"></div>
+              <span class="text-2xl text-white">РЕЗУЛЬТАТЫ</span>
+            </div>
+
+            <h2 class="max-w-[400px] text-7xl text-white font-bold">
+              Уже полученные <span class="text-yellow">награды</span>
+            </h2>
+
+            <div class="flex gap-6">
+              <button class="flex items-center justify-center w-20 h-20 rounded-full border border-yellow text-white rotate-180 disabled:text-gray disabled:border-[#1E1E1E] disabled:bg-[#1E1E1E]" disabled>
+                <svg width="20" height="20" class="fill-current">
+                  <use xlink:href="/assets/icons/sprites.svg#arrow-long"></use>
+                </svg>
+              </button>
+
+              <button class="flex items-center justify-center w-20 h-20 rounded-full border border-yellow text-white">
+                <svg width="20" height="20" class="fill-current">
+                  <use xlink:href="/assets/icons/sprites.svg#arrow-long"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-12">
+            <article class="flex flex-col gap-14 p-12 pt-24 rounded-3xl backdrop-blur-sm text-white z-10 border-gradient">
+              <div class="flex items-center gap-12">
+                <div class="w-52 h-52 border border-[#383840] overflow-hidden rounded-3xl">
+                  <img
+                    width="130"
+                    height="130"
+                    class="w-full h-full object-cover"
+                    src="/assets/img/project-arkham.jpg"
+                    alt="Arkham"
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center w-14 h-14 rounded-full border border-yellow text-xl text-white">1</div>
+                  <h3 class="mt-6 text-3xl font-bold">Arkham</h3>
+                  <span class="">Июль 2023</span>
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-12 text-2xl">
+                <div class="whitespace-nowrap">
+                  Заработано: <span class="text-yellow">$200</span>
+                </div>
+                <div class="whitespace-nowrap">
+                  Вложения: <span class="text-yellow">$0</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="flex flex-col gap-14 p-12 pt-24 rounded-3xl backdrop-blur-sm text-white z-10 border-gradient">
+              <div class="flex items-center gap-12">
+                <div class="w-52 h-52 border border-[#383840] overflow-hidden rounded-3xl">
+                  <img
+                    width="130"
+                    height="130"
+                    class="w-full h-full object-cover"
+                    src="/assets/img/project-arkham.jpg"
+                    alt="Arkham"
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center w-14 h-14 rounded-full border border-yellow text-xl text-white">1</div>
+                  <h3 class="mt-6 text-3xl font-bold">Blur</h3>
+                  <span class="">Июль 2023</span>
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-12 text-2xl">
+                <div class="whitespace-nowrap">
+                  Заработано: <span class="text-yellow">$1400</span>
+                </div>
+                <div class="whitespace-nowrap">
+                  Вложения: <span class="text-yellow">$110</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="flex flex-col gap-14 p-12 pt-24 rounded-3xl backdrop-blur-sm text-white z-10 border-gradient">
+              <div class="flex items-center gap-12">
+                <div class="w-52 h-52 border border-[#383840] overflow-hidden rounded-3xl">
+                  <img
+                    width="130"
+                    height="130"
+                    class="w-full h-full object-cover"
+                    src="/assets/img/project-arkham.jpg"
+                    alt="Arkham"
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center w-14 h-14 rounded-full border border-yellow text-xl text-white">1</div>
+                  <h3 class="mt-6 text-3xl font-bold">Protesto</h3>
+                  <span class="">Июль 2023</span>
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-12 text-2xl">
+                <div class="whitespace-nowrap">
+                  Заработано: <span class="text-yellow">$50</span>
+                </div>
+                <div class="whitespace-nowrap">
+                  Вложения: <span class="text-yellow">$0</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="flex flex-col gap-14 p-12 pt-24 rounded-3xl backdrop-blur-sm text-white z-10 border-gradient">
+              <div class="flex items-center gap-12">
+                <div class="w-52 h-52 border border-[#383840] overflow-hidden rounded-3xl">
+                  <img
+                    width="130"
+                    height="130"
+                    class="w-full h-full object-cover"
+                    src="/assets/img/project-arkham.jpg"
+                    alt="Arkham"
+                  >
+                </div>
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center w-14 h-14 rounded-full border border-yellow text-xl text-white">1</div>
+                  <h3 class="mt-6 text-3xl font-bold">Protesto</h3>
+                  <span class="">Июль 2023</span>
+                </div>
+              </div>
+
+              <div class="flex justify-between gap-12 text-2xl">
+                <div class="whitespace-nowrap">
+                  Заработано: <span class="text-yellow">$50</span>
+                </div>
+                <div class="whitespace-nowrap">
+                  Вложения: <span class="text-yellow">$0</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <img
+            width="115"
+            height="115"
+            class="absolute left-[370px] -bottom-20"
+            src="/assets/img/sphere.png"
+          >
+
+          <img
+            class="absolute -right-[260px] top-24"
+            src="/assets/img/text-drop.png"
+          >
+
+          <img
+            class="absolute -left-[350px] -bottom-44"
+            src="/assets/img/text-click.png"
+          >
+        </section>
         
         <!-- CALL TO ATION -->
-        <section class="pt-64">
+        <div class="pt-64 mt-20">
           <div class="flex flex-col items-center gap-16 py-20 font-semibold bg-[#121212] border-2 border-[#2D2D2D] rounded-[60px]">
             <p class="max-w-[900px] text-6xl text-white text-center leading-[1.25]">
               Экономь время, повышай эффективность, зарабатывай с <span class="text-yellow">DropClick</span> 
             </p>
             <a href="#" class="px-36 py-8 text-2xl text-yellow uppercase rounded-full border border-yellow">Перейти</a>
           </div>
-        </section>
+        </div>
         
         <!-- HOW IT WORKS -->
-        <section></section>
-        
-        <!-- LEARING -->
-        <section class="pt-[220px]">
-          <div class="relative px-[1px] pb-[1px] rounded-[60px] bg-gradient-to-b from-black to-[#808080]">
-            <div class="flex flex-col items-center gap-16 py-20 -mt-24 bg-black rounded-[60px] z-10">
-              <svg width="105" height="105">
-                <use xlink:href="/assets/icons/sprites.svg#male"></use>
-              </svg>
+        <section class="relative flex flex-col items-center gap-40 mt-64">
+          <h2 class="text-7xl text-white font-bold">
+            Как это <span class="text-yellow">работает</span>?
+          </h2>
 
-              <p class="max-w-[750px] text-7xl text-white font-bold text-center leading-[1.5]">
-                Пройди обучение, <span class="text-yellow">присоединяйся к комьюнити</span>
-              </p>
+          <div class="flex gap-12 text-2xl z-10">
+            <article class="flex flex-col items-center gap-20 w-1/3 max-w-[350px] px-8 pb-16 pt-24 border-gradient text-gray text-center backdrop-blur-sm">
+              <img width="305" height="161" src="/assets/img/card.png" alt="Guide card">
+              <p>Проект объявляет новую активность с возможными наградами в криптовалюте</p>
+              <div class="flex items-center justify-center w-24 h-24 rounded-full border border-yellow text-white">1</div>
+            </article>
 
-              <a href="#" class="flex items-center gap-4 px-20 py-7 rounded-full text-2xl text-black font-semibold uppercase bg-gradient-to-r from-[#E1C133] to-[#FFE366] border border-[#FFEA8C]">
-                ЗАПИСАТЬСЯ
-                <svg class="-mr-6" width="25" height="25">
-                  <use xlink:href="/assets/icons/sprites.svg#arrow"></use>
-                </svg>
-              </a>
-            </div>
+            <article class="flex flex-col items-center gap-20 w-1/3 max-w-[350px] px-8 pb-16 pt-24 bg-[#ECCF4D] text-black text-center rounded-[15px]">
+              <div class="flex items-center justify-center w-24 h-24 rounded-full border-2 border-black">3</div>
+              <p class="mt-20">Гайд формируется на основе данных проекта и тестируется командой DropClick</p>
+            </article>
 
-            <img
-              class="absolute -right-16 -bottom-16 blur-md"
-              src="/assets/img/sphere.png"
-            >
+            <article class="flex flex-col items-center justify-end gap-20 w-1/3 max-w-[350px] px-8 pb-16 pt-24 border-gradient text-gray text-center backdrop-blur-sm">
+              <p class="mb-28">Получаете награду за активность</p>
+              <div class="flex items-center justify-center w-24 h-24 rounded-full border border-yellow text-white">3</div>
+            </article>
           </div>
+
+
+          <img
+            width="300"
+            height="300"
+            class="absolute -left-16 top-24"
+            src="/assets/img/sphere.png"
+          >
+        </section>
+        
+        <!-- LEARNING -->
+        <section class="relative mt-[220px]">
+          <div class="relative flex flex-col items-center gap-16 py-20 -mt-24 rounded-[60px] border-gradient backdrop-blur-sm z-10">
+            <svg width="105" height="105">
+              <use xlink:href="/assets/icons/sprites.svg#male"></use>
+            </svg>
+
+            <h2 class="max-w-[750px] text-7xl text-white font-bold text-center leading-[1.5]">
+              Пройди обучение, <span class="text-yellow">присоединяйся к комьюнити</span>
+            </h2>
+
+            <a href="#" class="flex items-center gap-4 px-20 py-7 rounded-full text-2xl text-black font-semibold uppercase bg-gradient-to-r from-[#E1C133] to-[#FFE366] border border-[#FFEA8C]">
+              ЗАПИСАТЬСЯ
+              <svg class="-mr-6" width="25" height="25">
+                <use xlink:href="/assets/icons/sprites.svg#arrow"></use>
+              </svg>
+            </a>
+          </div>
+
+          <img
+            class="absolute -right-16 -bottom-16"
+            src="/assets/img/sphere.png"
+          >
         </section>
       </div>
     </main>
 
     <footer class="pt-64 pb-12">
       <div class="container flex justify-between">
-        <div class="flex flex-col gap-8 text-3xl text-white">
+        <div class="flex flex-col items-start gap-8 text-3xl text-white">
           <a class="mb-4 text-4xl font-semibold [&.js-active]:text-bold" href="#">Главная</a>
           <a class="[&.js-active]:text-bold" href="#">О сервисе</a>
           <a class="[&.js-active]:text-bold" href="#">Результаты</a>
