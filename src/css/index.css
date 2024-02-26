@@ -32,5 +32,5 @@ html {
 }
 
 .button-outline {
-    @apply border border-primary hover:border-primary-hover active:text-black hover:text-white active:bg-primary md:hover:bg-primary disabled:text-gray disabled:border-[#1E1E1E] disabled:bg-[#1E1E1E] transition-colors;
+    @apply border border-primary hover:border-primary-hover active:text-black hover:text-white active:bg-primary md:hover:bg-primary disabled:text-gray disabled:border-[#1E1E1E] disabled:bg-[#1E1E1E] hover:disabled:bg-[#1E1E1E] transition-colors;
 }

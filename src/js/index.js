@@ -34,39 +34,63 @@ function toggleMenu(event) {
   wrapper.classList.toggle("js-active");
 }
 
-let activeIndex = 0;
-
 const slider = {
-  next: nextSlide,
-  prev: prevSlide,
+  wrapper: document.querySelector(".guides"),
+  inner: document.querySelector(".guides-inner"),
+  articles: document.querySelectorAll(".guides article"),
+  prevBtn: document.querySelector("[data-value='prev']"),
+  nextBtn: document.querySelector("[data-value='next']"),
+  currentIndex: 0,
+  next() {
+    this.currentIndex = Math.min(++this.currentIndex, this.articles.length);
+    updateSliderSlider();
+  },
+  prev() {
+    this.currentIndex = Math.max(--this.currentIndex, 0);
+    updateSliderSlider();
+  },
 };
 
+window.onresize = updateSliderSlider;
+
 function changeSlide(event) {
-  const articles = document.querySelectorAll(".guides-wrapper article");
   const { value } = event.currentEl.dataset;
 
-  slider[value](articles, );
-  console.log(outerWidth)
+  slider[value]();
 }
 
-function nextSlide(articles) {
-  const outerWidth = getSlidesWidth(articles);
-  activeIndex = Math.min(++activeIndex, articles.length);
-  console.log("next", activeIndex);
-}
+function updateSliderSlider() {
+  updateSliderButtons();
+  const { inner, articles } = slider;
 
-function prevSlide() {
-  activeIndex = Math.max(--activeIndex, 0);
-  console.log("prev", activeIndex);
+  const articlesWidth = getSlidesWidth(articles),
+    wrapperWidth = getWrapperWidth();
+
+  const offset = (articlesWidth - wrapperWidth) * (slider.currentIndex / (articles.length - 1));
+
+  inner.style.transform = `translate3d(-${offset}px, 0, 0)`;
 }
 
 function updateSliderButtons() {
-  
+  toggleSliderButton(slider.prevBtn, slider.currentIndex === 0);
+  toggleSliderButton(slider.nextBtn, slider.currentIndex === slider.articles.length - 1);
+}
+
+function toggleSliderButton(button, condition) {
+  if (condition) {
+    button.setAttribute("disabled", "disabled");
+  } else {
+    button.removeAttribute("disabled");
+  }
 }
 
 function getSlidesWidth(articles) {
   return [...articles].reduce((sum, item) => {
     sum += item.offsetWidth;
     return sum;
-  }, 0);
+  }, 0) + (slider.articles.length - 1) * 30;
+}
+
+function getWrapperWidth() {
+  return slider.wrapper.clientWidth;
 }
