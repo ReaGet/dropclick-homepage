@@ -8,30 +8,30 @@
   </head>
   <body class="bg-black">
     <header class="fixed w-full bg-[#0B0B0B] md:bg-black border border-[#191919] md:border-none rounded-b-2xl z-20">
-      <div class="container flex items-center justify-between py-6 md:py-14">
+      <div class="container group flex items-center justify-between flex-wrap py-6 md:py-14 js-active">
         <a href="/" class="text-4xl text-white font-semibold">
           DROP<span class="text-primary">CLICK</span>
         </a>
+
+        <button class="flex md:hidden items-center justify-center w-16 h-16 text-[#666] active:text-primary border border-current rounded-lg" data-action="toggleMenu">
+          <svg class="stroke-current" width="24" height="24">
+            <use xlink:href="/assets/icons/sprites.svg#burger"></use>
+          </svg>
+        </button>
   
-        <nav class="flex">
-          <button class="md:hidden">
-            <svg width="37" height="37">
-              <use xlink:href="/assets/icons/sprites.svg#burger"></use>
-            </svg>
-          </button>
-  
-          <div class="hidden md:flex gap-8 lg:gap-16 text-xl text-gray">
+        <div class="absolute lg:relative hidden md:flex group-[.js-active]:flex flex-col lg:flex-row flex-1 items-center gap-12 w-full p-8 lg:p-0 left-0 top-28 lg:top-0 bg-[#0B0B0B] lg:bg-transparent">
+          <nav class="flex flex-col lg:flex-row flex-1 items-center justify-center gap-8 lg:gap-16 text-2xl lg:text-xl text-gray">
             <a class="[&.js-active]:text-white hover:text-primary transition-colors js-active" href="#">Главная</a>
             <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">О сервисе</a>
             <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Результаты</a>
             <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Как это работает?</a>
             <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Контакты</a>
+          </nav>
+
+          <div class="flex items-center gap-8 text-2xl lg:text-xl lg:text-[14px] text-white">
+            <a href="/login">Войти</a>
+            <a href="#" class="button-outline px-6 py-4 rounded-full">Перейти в агрегатор</a>
           </div>
-        </nav>
-  
-        <div class="hidden md:flex items-center gap-8 text-xl lg:text-[14px] text-white">
-          <a href="/login">Войти</a>
-          <a href="#" class="button-outline px-6 py-4 rounded-full">Перейти в агрегаторе</a>
         </div>
       </div>
     </header>
