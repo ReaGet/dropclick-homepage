@@ -6,6 +6,8 @@ const actions = {
 };
 
 document.addEventListener("click", (event) => {
+  handleMenuClickOutside(event);
+
   const action = getClosestAction(event.target);
   if (!action) {
     return;
@@ -15,6 +17,12 @@ document.addEventListener("click", (event) => {
 
   actions[action.name](event);
 });
+
+function handleMenuClickOutside(event) {
+  if (!event.target.closest("header")) {
+    document.querySelector("header")?.classList.remove("js-active");
+  }
+}
 
 function getClosestAction(el) {
   const actionName = el?.getAttribute("data-action");
