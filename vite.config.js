@@ -24,9 +24,10 @@ export default defineConfig({
                     } else if (/css/i.test(extType)) {
                         extType = "css";
                     }
-                    return `assets/${extType}/[name]-[hash][extname]`;
+//                     return `assets/${extType}/[name]-[hash][extname]`;
+                    return `assets/${extType}/[name][extname]`;
                 },
-                entryFileNames: "assets/js/[name]-[hash].js",
+                entryFileNames: "assets/js/[name].js",
             },
         },
     },

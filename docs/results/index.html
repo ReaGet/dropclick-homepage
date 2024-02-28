@@ -6,9 +6,9 @@
     <meta name="description" content="DropClick - это лидирующая платформа, предоставляющая гайды по заработку на крипто-проектах. Мы тщательно отбираем проекты, поэтому вы не попадете на скам.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>DropClick - Агрегатор CryptoГайдов</title>
-    <script type="module" crossorigin src="/dropclick-homepage/assets/js/results-BQr6N_Nw.js"></script>
-    <link rel="modulepreload" crossorigin href="/dropclick-homepage/assets/index-D3aA1SAN.js">
-    <link rel="stylesheet" crossorigin href="/dropclick-homepage/assets/css/index-B4z8nYCc.css">
+    <script type="module" crossorigin src="/assets/js/results.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/index-BXIhnxbD.js">
+    <link rel="stylesheet" crossorigin href="/assets/css/index.css">
   </head>
   <body class="bg-black">
     <header class="group fixed w-full bg-[#0B0B0B] md:bg-black border border-[#191919] md:border-none rounded-b-2xl z-20">
@@ -19,22 +19,22 @@
 
         <button class="flex md:hidden items-center justify-center w-16 h-16 text-[#666] active:text-primary border border-current rounded-lg" data-action="toggleMenu">
           <svg class="stroke-current" width="24" height="24">
-            <use xlink:href="/dropclick-homepage/assets/svg/sprites-GbBzDEn_.svg#burger"></use>
+            <use xlink:href="/assets/svg/sprites.svg#burger"></use>
           </svg>
         </button>
   
         <div class="absolute md:relative hidden md:flex group-[.js-active]:flex flex-col md:flex-row flex-1 items-center gap-12 w-full p-8 md:p-0 left-0 top-28 md:top-0 bg-[#0B0B0B] md:bg-transparent">
           <nav class="flex flex-col md:flex-row flex-1 items-center justify-center gap-8 lg:gap-16 text-2xl md:text-xl text-gray">
-            <a class="[&.js-active]:text-white hover:text-primary transition-colors js-active" href="#">Главная</a>
-            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">О сервисе</a>
-            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Результаты</a>
-            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Как это работает?</a>
-            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="#">Контакты</a>
+            <a class="[&.js-active]:text-white hover:text-primary transition-colors js-active" href="/">Главная</a>
+            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="/#about">О сервисе</a>
+            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="/results">Результаты</a>
+            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="/#how">Как это работает?</a>
+            <a class="[&.js-active]:text-white hover:text-primary transition-colors" href="/#contacts">Контакты</a>
           </nav>
 
           <div class="flex items-center gap-8 text-2xl md:text-xl lg:text-[14px] text-white">
-            <a href="/login">Войти</a>
-            <a href="#" class="button-outline px-6 py-4 rounded-full">Перейти в агрегатор</a>
+            <a href="https://app.dropclick.pro/login">Войти</a>
+            <a href="https://app.dropclick.pro/" class="button-outline px-6 py-4 rounded-full">Перейти в агрегатор</a>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-starknet-DJFWA8CO.png"
+                    src="data:image/png;base64,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lk0tmeqmc0lUvi8cSizKifl+3v9Txq38ldKR3aoqvKgx0qH3jSt8LduZ5jVTSF84lFiEu/PSJF2oQo9cz72HCi+pVBXH+JoWq1YFUpMsW/hRgIeojnA0sZzMuyGo5FJCLDPyyW9iay96dZq69mnY9ileNIRDLDuzwCPqYKBTS/DvFDOsJ+rB7u0vmfLjt8eU+DCbyqnK0gGPi+qcfe9/nn6Y7oDA+++wYhE0wd402e+Hmb9Xzq1Q88LEar10sNC0at/SyGGUoemi9OUu06F2dzgXmCqBJbo5Ym++I4slM99jgaJiWWbJdH33GzFS1WddN9vs49Tl86ZzXNOm9sy5e5DXpUsWftsdXywn81P81Xr2Va6BmXO38UWf7qxI0yH1G+OlT7d3WT+R7D0E33Q08FCvSKWV8Bs+WsRyMlf0Gyb7C9OrP1SQrQkxrVmYz7vvy7+2dq/WW3vW5uVZD4itq0ajWDJRHlGsGyIEQlbRwCz8Do9SsYhoz/m8e7lE0BZyn3rGqlEqlpN5L9fqiTMUPreSFe7Hmm1AvWJ5eqZu3lzSeyRreXltQkLupEl/teNL7ArwqHjqj6JOdx45lP6ocFRy+54jiJWY2PdshebmVrv/0uWgcbE7/SewnhPBhBR6t6qKKm2IFRCwhoao/hPvkpITHL+igwoUxc6ttAsfBXis8AoW3k2DoFKxMjM/GPBEzdbWn2gk43jFqW5xlFaU2XUzQqqDHqWB1tVpmfBuGgSVirVnz7GOjs4BVwuZfpNCLzqXxMPT/3xx5kPCBeoDzWSr9I8L75pholKxMjLe//77pv5WNTW1UgnP/eqTXRNenhR0YJrL8aeeEO5Tj3k1oVr/KE01wt2jhXfNMFGpWK6uKfv3V/UXKydn78SJ9pwYDg4Zlus3WWx+pIlF/JNhyu8tHiEqFcvJ/Mue+lhVU3Ner39V4Wb4uj6/eMLcFK+QLb6+3A5ZcmXWGJqu0usq+ZSpHVGvWDJkUmFheVHRUZ0uTXhjZMI9ogumTKJyx+4jWcPMBz8LdF7nPU1z41N/1C6WagnziKYxjOow4ovpY7+b8QfbDuQlmWiuIP+cVybp1bnaaQMQyw64Oy8NGR+zTDebMhdV/QV+pvFswEVXKsNJQcpx63ym0T8m5nksVPiJP2WAWHaGhhx/t/hIjwVUG8nqWLJEN+cZz4jp457TufxFeFNZgViABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBVj4P9IHrt0mZuS8AAAAAElFTkSuQmCC"
                     alt="Arkham"
                   >
                 </div>
@@ -90,7 +90,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-celestia-rgkh7BHF.jpg"
+                    src="/assets/img/project-celestia.jpg"
                     alt="Arkham"
                   >
                 </div>
@@ -117,7 +117,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-neon-DNI24ZW5.png"
+                    src="/assets/img/project-neon.png"
                     alt="Arkham"
                   >
                 </div>
@@ -144,7 +144,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-starknet-DJFWA8CO.png"
+                    src="data:image/png;base64,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lk0tmeqmc0lUvi8cSizKifl+3v9Txq38ldKR3aoqvKgx0qH3jSt8LduZ5jVTSF84lFiEu/PSJF2oQo9cz72HCi+pVBXH+JoWq1YFUpMsW/hRgIeojnA0sZzMuyGo5FJCLDPyyW9iay96dZq69mnY9ileNIRDLDuzwCPqYKBTS/DvFDOsJ+rB7u0vmfLjt8eU+DCbyqnK0gGPi+qcfe9/nn6Y7oDA+++wYhE0wd402e+Hmb9Xzq1Q88LEar10sNC0at/SyGGUoemi9OUu06F2dzgXmCqBJbo5Ym++I4slM99jgaJiWWbJdH33GzFS1WddN9vs49Tl86ZzXNOm9sy5e5DXpUsWftsdXywn81P81Xr2Va6BmXO38UWf7qxI0yH1G+OlT7d3WT+R7D0E33Q08FCvSKWV8Bs+WsRyMlf0Gyb7C9OrP1SQrQkxrVmYz7vvy7+2dq/WW3vW5uVZD4itq0ajWDJRHlGsGyIEQlbRwCz8Do9SsYhoz/m8e7lE0BZyn3rGqlEqlpN5L9fqiTMUPreSFe7Hmm1AvWJ5eqZu3lzSeyRreXltQkLupEl/teNL7ArwqHjqj6JOdx45lP6ocFRy+54jiJWY2PdshebmVrv/0uWgcbE7/SewnhPBhBR6t6qKKm2IFRCwhoao/hPvkpITHL+igwoUxc6ttAsfBXis8AoW3k2DoFKxMjM/GPBEzdbWn2gk43jFqW5xlFaU2XUzQqqDHqWB1tVpmfBuGgSVirVnz7GOjs4BVwuZfpNCLzqXxMPT/3xx5kPCBeoDzWSr9I8L75pholKxMjLe//77pv5WNTW1UgnP/eqTXRNenhR0YJrL8aeeEO5Tj3k1oVr/KE01wt2jhXfNMFGpWK6uKfv3V/UXKydn78SJ9pwYDg4Zlus3WWx+pIlF/JNhyu8tHiEqFcvJ/Mue+lhVU3Ner39V4Wb4uj6/eMLcFK+QLb6+3A5ZcmXWGJqu0usq+ZSpHVGvWDJkUmFheVHRUZ0uTXhjZMI9ogumTKJyx+4jWcPMBz8LdF7nPU1z41N/1C6WagnziKYxjOow4ovpY7+b8QfbDuQlmWiuIP+cVybp1bnaaQMQyw64Oy8NGR+zTDebMhdV/QV+pvFswEVXKsNJQcpx63ym0T8m5nksVPiJP2WAWHaGhhx/t/hIjwVUG8nqWLJEN+cZz4jp457TufxFeFNZgViABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBViAWIAFiAVYgFiABYgFWIBYgAWIBVj4P9IHrt0mZuS8AAAAAElFTkSuQmCC"
                     alt="Arkham"
                   >
                 </div>
@@ -171,7 +171,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-celestia-rgkh7BHF.jpg"
+                    src="/assets/img/project-celestia.jpg"
                     alt="Arkham"
                   >
                 </div>
@@ -198,7 +198,7 @@
                     width="130"
                     height="130"
                     class="w-full h-full object-cover"
-                    src="/dropclick-homepage/assets/img/project-neon-DNI24ZW5.png"
+                    src="/assets/img/project-neon.png"
                     alt="Arkham"
                   >
                 </div>
@@ -223,17 +223,17 @@
             width="115"
             height="115"
             class="absolute left-[370px] -bottom-20"
-            src="/dropclick-homepage/assets/img/sphere-Cq_y1fTd.png"
+            src="/assets/img/sphere.png"
           >
 
           <img
             class="absolute -right-16 top-[270px] md:-right-[260px] md:top-24 opacity-25"
-            src="/dropclick-homepage/assets/img/text-drop-D3wyVNNm.png"
+            src="/assets/img/text-drop.png"
           >
 
           <img
             class="absolute -left-12 -bottom-4 md:-left-[350px] md:-bottom-44 opacity-25"
-            src="/dropclick-homepage/assets/img/text-click--JDSDUYF.png"
+            src="/assets/img/text-click.png"
           >
         </section>
       </div>
@@ -242,11 +242,11 @@
     <footer class="pt-44 pb-12">
       <div class="container flex flex-col md:flex-row justify-between gap-12 divide-y divide-gray md:divide-none">
         <div class="flex flex-col items-start gap-8 text-3xl text-white">
-          <a class="mb-4 text-4xl font-semibold [&.js-active]:text-bold" href="#">Главная</a>
-          <a class="[&.js-active]:text-bold" href="#">О сервисе</a>
-          <a class="[&.js-active]:text-bold" href="#">Результаты</a>
-          <a class="[&.js-active]:text-bold" href="#">Как это работает?</a>
-          <a class="[&.js-active]:text-bold" href="#">Контакты</a>
+          <a class="mb-4 text-4xl font-semibold [&.js-active]:text-bold" href="/">Главная</a>
+          <a class="[&.js-active]:text-bold" href="/#about">О сервисе</a>
+          <a class="[&.js-active]:text-bold" href="/results">Результаты</a>
+          <a class="[&.js-active]:text-bold" href="/#how">Как это работает?</a>
+          <a class="[&.js-active]:text-bold" href="/#contacts">Контакты</a>
         </div>
 
         <div class="flex flex-col gap-12 pt-12 md:pt-0">
@@ -255,12 +255,12 @@
           <div class="flex gap-6">
             <a href="https://t.me/dropclick" target="_blank" class="flex items-center justify-center w-[46px] h-[46px] bg-primary rounded-full">
               <svg width="27" height="27">
-                <use xlink:href="/dropclick-homepage/assets/svg/sprites-GbBzDEn_.svg#tg"></use>
+                <use xlink:href="/assets/svg/sprites.svg#tg"></use>
               </svg> 
             </a>
             <a href="https://www.youtube.com/channel/UCKHXMlkZIK6B1RHrAhF-4nQ" target="_blank" class="flex items-center justify-center w-[46px] h-[46px] bg-primary rounded-full">
               <svg width="27" height="27">
-                <use xlink:href="/dropclick-homepage/assets/svg/sprites-GbBzDEn_.svg#yt"></use>
+                <use xlink:href="/assets/svg/sprites.svg#yt"></use>
               </svg> 
             </a>
           </div>
